@@ -1,0 +1,6 @@
+default:
+  hosts: 
+    default-node: 
+      ansible_host: 
+  vars:
+    OWNER: "ruan"

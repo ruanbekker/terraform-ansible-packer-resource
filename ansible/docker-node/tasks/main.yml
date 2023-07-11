@@ -1,0 +1,3 @@
+---
+- name: Setup EC2 Instance
+  import_tasks: setup-instance.yml
