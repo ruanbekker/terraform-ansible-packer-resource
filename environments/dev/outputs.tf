@@ -1,7 +1,7 @@
 output "build_uuid" {
-  value = resource.packer_image.image.build_uuid
+  value = module.packer_node.build_uuid
 }
 
 output "ip" {
-  value = aws_instance.packer.public_ip
+  value = module.packer_node.ip
 }

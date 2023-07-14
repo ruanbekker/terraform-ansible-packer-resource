@@ -3,6 +3,11 @@ variable "region" {
   default = "eu-west-1"
 }
 
+variable "profile" {
+  type    = string
+  default = "test"
+}
+
 variable "node" {
   type    = string
   default = "dockernode"
@@ -79,7 +84,7 @@ build {
   }
 
   provisioner "ansible-local" {
-    playbook_file   = "../../ansible/playbook.yml"
+    playbook_file   = "../../ansible/playbook.ymls"
     playbook_dir    = "../../ansible"
     extra_arguments = [
       "--inventory inventory/default.yml"

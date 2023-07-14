@@ -1,0 +1,4 @@
+environments/dev/.terraform/*
+environments/dev/.terraform.lock.hcl
+environments/dev/.terraform.tfstate.lock.info
+environments/dev/terraform.tfstate*
